@@ -1,5 +1,12 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
+body {
+    color: red;
+}
 /* Front page */
+.hero-banner {
+    background-image: url(../../assest/images/logos/inhabitent-logo-full.svg), url(../../assest/images/home-hero.jpg);
+    background-size: contain, cover;
+    height: 100vh;
+}

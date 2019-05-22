@@ -1,0 +1,19 @@
+#colophon {
+    background-image: url('../../assest/images/dark-wood.png');
+    width: 100%;
+
+}
+
+.footer-flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    padding-top: 20px;
+}
+
+.copyright-info p {
+    text-align: center;
+    margin: 0;
+}

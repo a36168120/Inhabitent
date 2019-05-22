@@ -1,9 +1,6 @@
-(function ($) {
-
-    // my codes.......
-    $('body').append('hello world');
-    
-
-})(jQuery);
+// (function ($) {
+   
+//     $('body').append('hello world');
+// })(jQuery);
 
 
