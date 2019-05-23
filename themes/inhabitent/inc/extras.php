@@ -42,3 +42,13 @@ function inhabitent_login_url() {
 	return home_url();
 }
 add_filter('login_headerurl', 'inhabitent_login_url');
+
+
+function inhabitent_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'inhabitent_body_class_for_pages' );

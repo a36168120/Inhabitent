@@ -4,9 +4,37 @@
 body {
     color: red;
 }
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logo {
+    width: 50px;
+}
+
+
 /* Front page */
+
+
+
 .hero-banner {
     background-image: url(../../assest/images/logos/inhabitent-logo-full.svg), url(../../assest/images/home-hero.jpg);
-    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-size: 35% 35%, cover;
+    background-position: center;
     height: 100vh;
+}
+
+.fp-journal-entries {
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-entry {
+    display: flex;
 }

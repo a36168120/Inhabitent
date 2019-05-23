@@ -6,7 +6,6 @@
  */
 
 ?>
-<!-- <?php echo get_template_directory_uri(); ?> -->
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
