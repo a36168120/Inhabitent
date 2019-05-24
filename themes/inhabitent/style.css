@@ -227,43 +227,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: "Merriweather Web";
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.eot");
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../assest/fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.eot");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../assest/fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather Web";
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../assest/fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: "Merriweather Web";
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assest/fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather Web";
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
-  src: url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../assest/fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: "Novecento Sans Web";
-  src: url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  src: url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Novecento Sans Web";
-  src: url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  src: url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assest/fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -712,8 +712,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 body {
-  color: red; }
+  font-family: "Merriweather Web";
+  font-weight: normal;
+  font-size: 16px; }
 
+h1, h2, h3 {
+  font-family: "Novecento Sans Web";
+  font-weight: bold; }
+
+/* Header */
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,9 +734,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%; }
-
-.header-logo {
-  width: 50px; }
+  .header-container .header-logo {
+    width: 50px; }
 
 /* Front page */
 .hero-banner {
@@ -739,19 +745,50 @@ body {
   background-position: center;
   height: 100vh; }
 
+.fp-journal h2 {
+  text-align: center; }
+
 .fp-journal-entries {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.journal-entry {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .fp-journal-entries .journal-entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid;
+    height: 30vw;
+    width: 25vw;
+    margin-left: 1.5rem; }
+    .fp-journal-entries .journal-entry .fp-post-thumbnail {
+      height: 250px; }
+    .fp-journal-entries .journal-entry .fp-post-comment {
+      color: #808080;
+      font-size: 12px;
+      margin-top: 20px;
+      margin-left: 10px; }
+    .fp-journal-entries .journal-entry .fp-post-title {
+      margin-left: 10px; }
+      .fp-journal-entries .journal-entry .fp-post-title a {
+        text-decoration: none; }
+      .fp-journal-entries .journal-entry .fp-post-title h3 {
+        margin-right: 50px;
+        font-size: 20px;
+        letter-spacing: 1px; }
+      .fp-journal-entries .journal-entry .fp-post-title .read-more-btn {
+        border: 1px solid;
+        padding: 5px 15px 5px 15px; }
 
 #colophon {
   background-image: url("../../assest/images/dark-wood.png");
