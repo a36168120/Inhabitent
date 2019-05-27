@@ -13,9 +13,9 @@
 					<div class="footer-flex-container"> 
 						<div class="contact-info">
 							<h3>CONTACT INFO</h3>
-							<i class="far fa-envelope"><span> info@inhabitent.com</span></i>
+							<i class="far fa-envelope"><a href="##"><span> info@inhabitent.com</span></a></i>
 							<br>
-							<i class="fa fa-phone"><span> 778-456-7891</span></i>
+							<i class="fa fa-phone"><a href="##"><span> 778-456-7891</a></span></i>
 						</div>
 						<div class="business-hours">
 							<h3>BUSINESS HOURS</h3>
@@ -31,8 +31,7 @@
 					</div>
 
 					<div class="copyright-info">
-					<p>COPYRIGHT © 2019 INHABITENT</p>
-					<!-- <a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress');?></a> -->
+					<p>copyright © 2019 inhabitent</p>
 					</div><!-- .site-info -->
 
 				</section>

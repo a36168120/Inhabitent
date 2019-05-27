@@ -19,7 +19,7 @@ h1, h2, h3 {
     position: absolute;
     justify-content: space-between;
     width: 100%;
-
+    position: fixed;
     .header-logo {
         width: 50px;
     }
@@ -88,4 +88,35 @@ h1, h2, h3 {
         }
     }
 }
+
+.product-terms {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    // height: 20vw;
+    .product-term {
+        text-align: center;
+        margin-left: 20px;
+        width: 20vw;
+        border: 1px solid;
+        img {
+            width: 70px;
+        }
+    }
+}
+
+
+// Find Us Page
+
+.page-wrapper {
+    display: flex;
+    margin-left: 150px;
+    
+    .page-sidebar {
+        border: 1px solid;
+        width: 50vw;
+    }
+}
+
 
