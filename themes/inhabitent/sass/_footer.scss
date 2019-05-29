@@ -1,29 +1,54 @@
-#colophon {
+.site-footer {
     background-image: url('../../assest/images/dark-wood.png');
     width: 100%;
-}
-
-.footer-info {
-    height: 350px;
-    line-height: 1.75;
-    .footer-flex-container {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 50px;
-        .contact-info a {
-            text-decoration: none;
-        }
-        .footer-logo {
-            padding-top: 20px;
-            img {
-                width: 70%;
+    
+    .footer-info {
+        @include container;
+        color: white;
+        height: 350px;
+        .footer-flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            .contact-info {
+                width: 25%;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                h3 {
+                    color: $orange;
+                }
+                i {
+                    padding-right: 5px;
+                }
+            }
+            .business-hours {
+                width: 30%;
+                padding-right: 50px;
+                span {
+                    font-weight: bold;
+                }
+                h3 {
+                    color: $orange;
+                }
+            }
+            .footer-logo {
+                position: relative;
+                width: 50%;
+                padding-top: 20px;
+                img {
+                    position: absolute;
+                    right: 0;
+                    width: 50%;
+                }
             }
         }
+    
+        .copyright-info p {
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
-
-    .copyright-info p {
-        text-align: center;
-        margin: 0;
-    }
-}
-
+}    

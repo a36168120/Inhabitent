@@ -11,19 +11,10 @@ h1, h2, h3 {
     font-family: "Novecento Sans Web";
     font-weight: bold;
 }
-/* Header */
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    .header-logo {
-        width: 50px;
-    }
-}
+// * {
+//     border: 1px solid;
+// }
 
 /* Front page */
 
@@ -57,7 +48,6 @@ h1, h2, h3 {
         .fp-post-thumbnail {
             height: 250px;
         }
-
         
         .fp-post-comment {
             color: #808080;
@@ -84,7 +74,6 @@ h1, h2, h3 {
                 border: 1px solid;
                 padding: 5px 15px 5px 15px;
             }
-
         }
     }
 }
@@ -93,15 +82,24 @@ h1, h2, h3 {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: center;
-    // height: 20vw;
+    justify-content: space-around;
+    // width: 1120px;
     .product-term {
         text-align: center;
         margin-left: 20px;
         width: 20vw;
         border: 1px solid;
+        border-top: 4px solid;
+        padding: 0 20px;
         img {
             width: 70px;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            background-color: #248A83;
+            color: white;
         }
     }
 }

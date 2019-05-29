@@ -12,8 +12,7 @@ get_header(); ?>
             
             <section class="fp-journal">
                 <div class="hero-banner"></div>
-                
-                <!-- RIGHT HERE --> 
+                 
                 <!-- product terms and icons -->
                 <h2>Shop Stuff</h2>
                 <?php 

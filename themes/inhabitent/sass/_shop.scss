@@ -1,0 +1,30 @@
+.shop-page-header {
+    text-align: center;
+    .shop-terms {
+        display: flex;
+        justify-content: space-around;
+        li {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.shop-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    .products {
+        border: 1px solid;
+        .product-thumbnail {
+            height: 250px;
+        }
+    }
+}
+
+
