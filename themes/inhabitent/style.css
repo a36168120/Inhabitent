@@ -803,15 +803,6 @@ h1, h2, h3, h4, h5, h6 {
         border: 1px solid;
         padding: 5px 15px 5px 15px; }
 
-.page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 150px; }
-  .page-wrapper .page-sidebar {
-    border: 1px solid;
-    width: 65vw; }
-
 /* Header */
 .site-header {
   position: fixed;
@@ -885,6 +876,74 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center;
       text-transform: uppercase; }
 
+/* Journal page */
+.journal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .journal-content .site-journal {
+    padding-top: 100px;
+    margin-left: 150px; }
+  .journal-content .page-sidebar {
+    border-left: 1px solid #a1a1a1;
+    width: 100vw;
+    margin-top: 40px;
+    padding-left: 41px; }
+
+.widget-area {
+  padding-left: 20px;
+  margin-top: 50px; }
+  .widget-area h2 {
+    color: #2f1339; }
+  .widget-area .custom-html-widget a {
+    text-decoration: none; }
+    .widget-area .custom-html-widget a span {
+      padding-left: 15px;
+      font-family: "Merriweather Web";
+      font-weight: normal;
+      color: #248A83;
+      line-height: 1.5; }
+  .widget-area .day-of-week {
+    font-weight: bold; }
+  .widget-area .widget_archive ul {
+    padding: 0;
+    margin: 0 auto; }
+    .widget-area .widget_archive ul li {
+      list-style-type: none;
+      padding: 5px 0; }
+      .widget-area .widget_archive ul li a {
+        text-decoration: none;
+        color: #248A83; }
+
+.entry-header {
+  position: relative; }
+  .entry-header img {
+    width: 50vw; }
+  .entry-header h2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #248A83;
+    padding: 20px 20px; }
+    .entry-header h2 a {
+      text-decoration: none;
+      color: white; }
+    .entry-header h2 a:hover {
+      text-decoration: none;
+      color: #f0e4d1; }
+  .entry-header div {
+    position: absolute;
+    right: 19%;
+    bottom: 6px;
+    background-color: #248A83;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-family: "Novecento Sans Web";
+    font-weight: normal; }
+
+.entry-content p {
+  padding-right: 150px; }
+
 .shop-page-header {
   text-align: center; }
   .shop-page-header .shop-terms {
@@ -936,3 +995,13 @@ h1, h2, h3, h4, h5, h6 {
   .about-sections div {
     padding: 0 100px;
     line-height: 2; }
+
+/* Find-Us page */
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px; }
+  .page-wrapper .page-sidebar {
+    border: 1px solid;
+    width: 65vw; }

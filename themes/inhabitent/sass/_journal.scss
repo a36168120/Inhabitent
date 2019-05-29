@@ -1,1 +1,84 @@
-    
+/* Journal page */ 
+
+.journal-content {
+    display: flex;
+    .site-journal {
+        padding-top: 100px;
+        margin-left: 150px;
+    }
+    .page-sidebar {
+        border-left: 1px solid $light_grey;
+        width: 100vw;
+        margin-top: 40px;
+        padding-left: 41px;
+    }
+}
+.widget-area {
+    padding-left: 20px;
+    margin-top: 50px;
+    h2 {
+        color: $purple;
+    }
+    .custom-html-widget a {
+        text-decoration: none;
+        span {
+            padding-left: 15px;
+            font-family: "Merriweather Web";
+            font-weight: normal;
+            color: $green;
+            line-height: 1.5;
+        }
+    }
+    .day-of-week {
+        font-weight: bold;
+    }
+    .widget_archive ul {
+        padding: 0;
+        margin: 0 auto;
+        li {
+            list-style-type: none;
+            padding: 5px 0;
+            a {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+}
+
+
+.entry-header {
+    position: relative;
+    img {
+        width: 50vw;
+    }
+    h2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $green;
+        padding: 20px 20px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $yellow;
+        }
+    }
+    div {
+        position: absolute;
+        right: 19%;
+        bottom: 6px;
+        background-color: $green;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        font-family: "Novecento Sans Web";
+        font-weight: normal;
+    }
+}
+
+.entry-content p {
+    padding-right: 150px;
+}

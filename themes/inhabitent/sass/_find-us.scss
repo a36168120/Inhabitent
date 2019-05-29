@@ -1,0 +1,11 @@
+/* Find-Us page */ 
+
+.page-wrapper {
+    display: flex;
+    margin-left: 150px;
+    
+    .page-sidebar {
+        border: 1px solid;
+        width: 65vw;
+    }
+}
