@@ -14,7 +14,7 @@
 						<div class="contact-info">
 							<h3>Contact Info</h3>
 							<p><i class="far fa-envelope"><a href="##"><span> info@inhabitent.com</span></a></i></p>
-							<p><i class="fa fa-phone"><a href="##"><span> 778-456-7891</a></span></i></p>
+							<p><i class="fa fa-phone"><a href="##"><span> 778-456-7891</span></a></i></p>
 								<i class="fab fa-facebook-square"></i>
 								<i class="fab fa-twitter-square"></i>
 								<i class="fab fa-google-plus-square"></i>

@@ -1,0 +1,30 @@
+/* About Page */
+
+.about-banner {
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.3));
+    background-image: url(../../assest/images/about-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    position: relative;
+}
+
+.about-title {
+    position: absolute;
+    transform: translate(230%, -300%);
+    color: white;
+    font-size: 2rem;
+}
+
+.about-sections {
+    @include container;
+    padding: 50px 50px 50px 50px;
+    h2 {
+        text-align: center;
+    }
+    div {
+        padding: 0 100px;
+        line-height: 2;
+    }
+}
