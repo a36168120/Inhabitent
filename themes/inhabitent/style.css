@@ -805,9 +805,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .site-header {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
-  border-bottom: 1px solid #a1a1a1; }
+  border-bottom: 1px solid #a1a1a1;
+  background-color: white;
+  opacity: 0.7; }
 
 .header-container {
   max-width: 1120px;
@@ -828,6 +830,19 @@ h1, h2, h3, h4, h5, h6 {
   .header-container .header-logo {
     width: 50px; }
 
+.main-navigation {
+  padding-left: 100px;
+  right: 0;
+  width: 60%; }
+  .main-navigation li {
+    padding-right: 25px; }
+    .main-navigation li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 1.75;
+      color: #248A83; }
+
+/* Footer */
 .site-footer {
   background-image: url("../../assest/images/dark-wood.png");
   width: 100%; }
@@ -944,6 +959,13 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content p {
   padding-right: 150px; }
 
+/* Shop page */
+.shop-page {
+  padding-top: 50px;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .shop-page-header {
   text-align: center; }
   .shop-page-header .shop-terms {
@@ -951,7 +973,8 @@ h1, h2, h3, h4, h5, h6 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    border-bottom: 1px dashed #a1a1a1; }
     .shop-page-header .shop-terms li {
       list-style-type: none; }
       .shop-page-header .shop-terms li a {
