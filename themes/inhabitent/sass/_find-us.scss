@@ -1,11 +1,41 @@
 /* Find-Us page */ 
 
-.page-wrapper {
+.find-us-content {
     display: flex;
-    margin-left: 150px;
-    
-    .page-sidebar {
-        border: 1px solid;
-        width: 65vw;
+    .site-find-us {
+        margin-left: 150px;
+        padding-top: 50px;
     }
+    .page-sidebar {
+        border-left: 1px solid $light_grey;;
+        width: 65vw;
+        margin-top: 40px;
+    }
+    h2, h3 {
+        color: $purple;
+    }
+}
+
+.widget-area {
+    padding-left: 40px;
+}
+
+.find-us-form {
+    text-transform: uppercase;
+    .find-us-star {
+        color: $orange;
+    }
+    .find-us-submit input {
+        padding: 10px 20px;
+        text-transform: uppercase;
+        background-color: $green;
+        color: white;
+    }
+    p {
+        color: $purple;
+    }
+}
+
+.wpcf7-form-control {
+    background-color: #F4F4F4;
 }

@@ -980,8 +980,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-title {
   position: absolute;
-  -webkit-transform: translate(230%, -300%);
-          transform: translate(230%, -300%);
+  -webkit-transform: translate(300%, -300%);
+          transform: translate(300%, -300%);
   color: white;
   font-size: 2rem; }
 
@@ -997,11 +997,34 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2; }
 
 /* Find-Us page */
-.page-wrapper {
+.find-us-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-left: 150px; }
-  .page-wrapper .page-sidebar {
-    border: 1px solid;
-    width: 65vw; }
+  display: flex; }
+  .find-us-content .site-find-us {
+    margin-left: 150px;
+    padding-top: 50px; }
+  .find-us-content .page-sidebar {
+    border-left: 1px solid #a1a1a1;
+    width: 65vw;
+    margin-top: 40px; }
+  .find-us-content h2, .find-us-content h3 {
+    color: #2f1339; }
+
+.widget-area {
+  padding-left: 40px; }
+
+.find-us-form {
+  text-transform: uppercase; }
+  .find-us-form .find-us-star {
+    color: #d99054; }
+  .find-us-form .find-us-submit input {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #248A83;
+    color: white; }
+  .find-us-form p {
+    color: #2f1339; }
+
+.wpcf7-form-control {
+  background-color: #F4F4F4; }
