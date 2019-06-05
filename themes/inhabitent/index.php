@@ -2,13 +2,13 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent
  */
-
 get_header(); ?>
+
 <div class="journal-content">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-journal" role="main">
+		<main id="main" class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 

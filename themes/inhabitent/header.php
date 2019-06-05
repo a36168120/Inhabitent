@@ -23,8 +23,8 @@
 				<div class="header-container">
 
 					<div class="header-logo">
-					<a href="http://localhost:8888/inhabitent/">
-						<img src="<?php echo get_template_directory_uri(); ?>/assest/images/logos/inhabitent-logo-tent.svg" alt="">
+						<a href="http://localhost:8888/inhabitent/">
+							<img src="<?php echo get_template_directory_uri(); ?>/assest/images/logos/inhabitent-logo-tent.svg" alt="">
 						</a>
 					</div>
 

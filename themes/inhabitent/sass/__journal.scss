@@ -1,17 +1,8 @@
 /* Journal page */ 
 
 .journal-content {
-    display: flex;
-    .site-journal {
-        padding-top: 100px;
-        margin-left: 150px;
-    }
-    .page-sidebar {
-        border-left: 1px solid $light_grey;
-        width: 100vw;
-        margin-top: 40px;
-        padding-left: 41px;
-    }
+    @include main-content;
+    @include container;
 }
 
 .widget-area {
