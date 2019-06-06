@@ -27,7 +27,7 @@
 						</div>
 						<div class="footer-logo">
 							<a href="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assest/images/logos/inhabitent-logo-text.svg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" alt="">
 							</a>
 						</div>
 					</div>

@@ -12,17 +12,14 @@
 .header-container {
     @include container;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     .header-logo {
         width: 50px;
     }
 }
 .main-navigation {
-    padding-left: 100px;
-    right: 0;
-    width: 60%;
+    width: 50%;
     li {
         padding-right: 25px;
         a {
@@ -34,4 +31,8 @@
             font-weight: normal;
         }
     }
+}
+
+.search-form i {
+    color: $green;
 }

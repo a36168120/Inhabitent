@@ -2,21 +2,22 @@
     $(function() {
 
         const searchBar = $('.search-field');
-        // const selected = this.value;
+      
+        // console.log(this.title);
     
         searchBar.hide();
-        $('.search-submit').on('click', function(event) {
+        $('.fa-search').on('click', function(event) {
           event.preventDefault();
           searchBar.toggle('slide');
           searchBar.focus();
         });
     
-        // searchBar.on('blur', function(event) {
-        //   event.preventDefault();
-        //   if (selected === '') {
-        //       searchBar.hide('slide');
-        //   }
-        // });
+        searchBar.on('blur', function(event) {
+          event.preventDefault();
+          if ( searchBar.val() === '' ) {
+              searchBar.hide('slide');
+          }
+        });
     });
 
 })(jQuery);

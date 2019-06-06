@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Novecento Sans Web";
 }
 
-/* Front page */
+/* Front page */ 
 
 .hero-banner {
-    background-image: url(../../assest/images/logos/inhabitent-logo-full.svg), url(../../assest/images/home-hero.jpg);
+    background-image: url(../../assets/images/logos/inhabitent-logo-full.svg), url(../../assets/images/home-hero.jpg);
     background-repeat: no-repeat;
     background-size: 35% 35%, cover;
     background-position: center;
@@ -115,4 +115,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
+.adventure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "canoe canoe beach beach"
+    "canoe canoe mountain sky";
+}

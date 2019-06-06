@@ -52,3 +52,24 @@ function inhabitent_body_class_for_pages( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
+
+
+function hwl_home_pagesize( $query ) {
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+
+    if ( is_home() ) {
+        
+        $query->set( 'posts_per_page', 5 );
+        return;
+    }
+
+    if ( is_post_type_archive('product') ) {
+        
+		$query->set( 'posts_per_page', 16 );
+		$query->set( 'orderby', 'title' );
+		$query->set( 'order', 'asc' );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );

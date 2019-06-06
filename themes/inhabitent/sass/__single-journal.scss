@@ -80,6 +80,11 @@
 .product-comment {
     padding-right: 50px;
     padding-top: 50px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
     h3 {
         font-size: 2rem;
     }
@@ -99,6 +104,43 @@
         }
     }
 }
+
+.comment-list article {
+    display: flex;
+    border-bottom: 1px solid $border;
+    padding-top: 20px;
+    .comment-author-avatar {
+        height: 100%;
+        img {
+            border-radius: 50px;
+        }
+    }
+    .comment-content {
+        padding-left: 30px;
+        .comment-author {
+            font-family: "Novecento Sans Web";
+            font-weight: bold;
+            cite {
+                font-style: unset;
+            } 
+        }
+        .comment-metadata time {
+            color: $light_grey;
+        }
+        a {
+            color: $green;
+            text-decoration: none;
+            &:hover {
+                color: $purple;
+            }
+        }
+        .reply {
+            padding: 10px 0;
+        }
+    }
+}
+
+
 
 /* Log out comment */
 .comment-form {
