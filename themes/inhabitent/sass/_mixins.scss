@@ -20,12 +20,12 @@
 
 @mixin main-content {
     display: flex;
-    .site-content {
+    .site-main {
         padding-top: 100px;
     }
     .page-sidebar {
         border-left: 1px solid $light_grey;
-        width: 100vw;
+        width: 30%;
         margin-top: 40px;
         padding-left: 41px;
     }

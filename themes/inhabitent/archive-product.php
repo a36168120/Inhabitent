@@ -5,8 +5,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="shop-page">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="shop-page">
+	<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -32,26 +32,26 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class="shop-products">
+			<div class="shop-products-grid">
 				<?php while ( have_posts() ) : the_post(); ?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<div class="products">
+					<div class="products-grid-item">
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 							<div class="product-thumbnail">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail( 'large' ); ?>
+									</a>
 								<?php endif; ?>
 							</div>
-
-							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 							
-							<?php if ( 'post' === get_post_type() ) : ?>
-								<div class="entry-meta">
-									<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-								</div><!-- .entry-meta -->
-							<?php endif; ?>
-						</div>
-					</article><!-- #post-## -->
+							<div class="product-info">
+								<?php the_title( sprintf( '<span class="product-title">', esc_url( get_permalink() ) ), '</span>' ); ?>
+								<span class="dots">...............</span>
+								<div class="price"> <?php echo CFS()->get('price'); ?></div>
+							</div>
+						</article><!-- #post-## -->
+					</div>
 				<?php endwhile; ?>
 			</div>
 
@@ -63,7 +63,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

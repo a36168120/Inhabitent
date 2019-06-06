@@ -1,6 +1,4 @@
-// * {
-//     border: 1px solid black;
-// }
+/* Single Product page */
 
 
 .single-product-content {
@@ -15,6 +13,14 @@
             padding-left: 50px;
             .product-header {
                 color: $orange;
+                h1 {
+                    margin: 0 auto;
+                }
+            }
+            .product-price {
+                font-family: "Novecento Sans Web";
+                font-weight: normal;
+                font-size: 2rem;
             }
             .product-icon button{
                 padding: 15px 30px;

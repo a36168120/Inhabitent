@@ -9,26 +9,51 @@
     text-align: center;
     .shop-terms {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         border-bottom: 1px dashed $light_grey;
+        padding: 0 300px 20px 300px;
         li {
             list-style-type: none;
+            padding: 0 20px;
             a {
                 text-decoration: none;
+                text-transform: uppercase;
+                color: $green;
+                font-family: "Novecento Sans Web";
+                font-weight: normal;
+                font-size: 1.2rem;
+                &:hover {
+                    color: $purple;
+                }
             }
         }
     }
 }
 
-.shop-products {
+.shop-products-grid {
+    padding-top: 25px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1.5rem;
     @include container;
-    .products {
-        border: 1px solid;
+    .products-grid-item {
+        border: 1px solid $light_grey;
+        article {
+            margin: 0;
+        }
         .product-thumbnail {
-            height: 250px;
+            max-height: 150px;
+            overflow: hidden;
+        }
+        .product-info {
+            display: flex;
+            justify-content: center;
+            padding: 20px 20px 0px 20px;
+            .dots {
+                overflow: hidden;
+            }
         }
     }
 }

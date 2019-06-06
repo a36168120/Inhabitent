@@ -1,47 +1,48 @@
 /* Journal page */ 
 
 .journal-content {
-    @include main-content;
     @include container;
+    @include main-content;
+    .content-area {
+        width: 70%;
+    }
 }
 
 .widget-area {
     @include side-bar;
 }
 
-
-.entry-header {
-    position: relative;
-    img {
-        width: 50vw;
-    }
-    h2 {
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: $green;
-        padding: 20px 20px;
-        a {
-            text-decoration: none;
+.journal-post {
+    padding-right: 50px;
+    .entry-header {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        h2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: $green;
+            padding: 20px 20px;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            a:hover {
+                text-decoration: none;
+                color: $yellow;
+            }
+        }
+        div {
+            position: absolute;
+            right: 0%;
+            bottom: 6px;
+            background-color: $green;
+            padding: 10px 20px 10px 20px;
             color: white;
-        }
-        a:hover {
-            text-decoration: none;
-            color: $yellow;
+            font-family: "Novecento Sans Web";
+            font-weight: normal;
         }
     }
-    div {
-        position: absolute;
-        right: 19%;
-        bottom: 6px;
-        background-color: $green;
-        padding: 10px 20px 10px 20px;
-        color: white;
-        font-family: "Novecento Sans Web";
-        font-weight: normal;
-    }
-}
-
-.entry-content p {
-    padding-right: 150px;
 }

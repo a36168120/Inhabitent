@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="single-product-content">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-content" role="main">
+		<main id="main" class="site-main" role="main">
 
             <?php if ( have_posts() ) : ?>
 
@@ -34,8 +34,11 @@ get_header(); ?>
                             <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
                         </header>
 
+                        <div class="product-price"> <?php echo CFS()->get('price'); ?></div>
+
                         <div class="product-content">
                             <?php the_content(); ?>
+                            <div class="price"> <?php echo CFS()->get('product_price'); ?></div>
                         </div>
 
                         <div class="product-icon">

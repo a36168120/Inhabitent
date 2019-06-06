@@ -1,0 +1,26 @@
+/* Category Product page */ 
+
+.category-product-content {
+    @include container;
+    padding-top: 100px;
+    .category-header {
+        text-align: center;
+        border-bottom: 1px dashed $light_grey;
+        padding-bottom: 25px;
+    }
+}
+
+.category-product-grid {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5rem;
+    padding-bottom: 50px;
+    .category-product-grid-item {
+        border: 1px solid $light_grey;
+        .category-product-thumbnail {
+            
+        }
+    }
+}

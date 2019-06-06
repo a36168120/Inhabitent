@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="journal-content">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-content" role="main">
+		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -19,11 +19,14 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<div class="journal-post">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+					<?php get_template_part( 'template-parts/content' ); ?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

@@ -16,7 +16,7 @@ get_header(); ?>
 			
 			<?php endwhile; // End of the loop. ?>
 
-			<section class="about-sections">
+			<!-- <section class="about-sections">
 				<h2>Our Story</h2>
 				<div>
 					<p> 
@@ -41,7 +41,7 @@ get_header(); ?>
 						Our shop is nestled away in a lovely little corner of Vancouver. Pop in, say hi, and try out our tents!
 					</p>
 				</div>
-			</section>
+			</section> -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </section>
