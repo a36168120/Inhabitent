@@ -7,6 +7,11 @@
 
 .shop-page-header {
     text-align: center;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web";
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     .shop-terms {
         display: flex;
         justify-content: space-between;
@@ -36,7 +41,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1.5rem;
-    // @include container;
     .products-grid-item {
         border: 1px solid $border;
         article {

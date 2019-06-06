@@ -1,33 +1,5 @@
 // /* About Page */
 
-// .about-banner {
-//     background-image: url(../../assest/images/about-hero.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: bottom;
-//     height: 100vh;
-//     position: relative;
-// }
-
-// .about-title {
-//     position: absolute;
-//     transform: translate(300%, -300%);
-//     color: white;
-//     font-size: 2rem;
-// }
-
-// .about-sections {
-//     @include container;
-//     padding: 50px 50px 50px 50px;
-//     h2 {
-//         text-align: center;
-//     }
-//     div {
-//         padding: 0 100px;
-//         line-height: 2;
-//     }
-// }
-
 .hero-image-header {
     height: 100vh;
 }
@@ -46,6 +18,8 @@
 .about-header {
     font-size: 2rem;
     color: $purple;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .about-title {
@@ -55,7 +29,7 @@
     .entry-content {
         margin: unset;
         h1 {
-            font-size: 3rem;
+            font-size: 3em;
             color: white;
             text-transform: uppercase;
             letter-spacing: 3px;

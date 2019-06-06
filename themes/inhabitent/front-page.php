@@ -43,7 +43,7 @@ get_header(); ?>
 			
 				<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $journal_posts = get_posts( $args ); ?> 
 				
-                <h2>INHABITENT JOURNAL</h2>
+                <h2>Inhabitent Journal</h2>
                 <div class="fp-journal-entries">
                     <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>    
                         <div class="journal-entry">
@@ -54,16 +54,18 @@ get_header(); ?>
                                     <?php the_post_thumbnail( 'large' ); ?>
                                 </div>
                             <?php } ?>
-                            <!-- Comments -->
-                            <div class="fp-post-comment">
-                                <?php echo get_the_date(); ?> /
-                                <?php echo get_comments_number(); ?> Comments
-                            </div>
-                                
-                            <!-- Title -->
-                            <div class="fp-post-title">
-                                <a href="<?php  echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-                                <a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+                            <div class="fp-post-info">
+                                <!-- Comments -->
+                                <div class="fp-post-comment">
+                                    <?php echo get_the_date(); ?> /
+                                    <?php echo get_comments_number(); ?> Comments
+                                </div>
+                                    
+                                <!-- Title -->
+                                <div class="fp-post-title">
+                                    <a href="<?php  echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+                                    <a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; wp_reset_postdata(); ?>

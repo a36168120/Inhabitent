@@ -11,7 +11,6 @@
 	margin-right: auto;
 }
 
-
 @mixin container {
 	max-width: 1120px;
     margin-left: auto;
@@ -21,7 +20,7 @@
 @mixin main-content {
     display: flex;
     .site-main {
-        padding-top: 50px;
+        padding-top: 100px;
     }
     .page-sidebar {
         border-left: 1px solid $border;
@@ -31,12 +30,14 @@
     }
 }
 
-
 @mixin side-bar {
 	padding-left: 20px;
     margin-top: 50px;
     h2 {
         color: $purple;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
     .custom-html-widget a {
         text-decoration: none;
@@ -46,6 +47,9 @@
             font-weight: normal;
             color: $green;
             line-height: 1.5;
+            &:hover {
+                color: $purple;
+            }
         }
     }
     .day-of-week {
@@ -60,6 +64,9 @@
             a {
                 text-decoration: none;
                 color: $green;
+                &:hover {
+                    color: $purple;
+                }
             }
         }
     }

@@ -4,12 +4,10 @@
 body {
     font-family: "Merriweather Web";
     font-weight: normal;
-    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Novecento Sans Web";
-    font-weight: bold;
 }
 
 /* Front page */
@@ -25,75 +23,93 @@ h1, h2, h3, h4, h5, h6 {
 .fp-journal {
     h2 {
         text-align: center;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        padding: 20px 0;
+        letter-spacing: 1px;
     }
 }
 
 .product-terms {
     @include container;
-    display: flex;
-    flex-direction: row;
     list-style: none;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
     .product-term {
         text-align: center;
-        width: 20vw;
-        border: 1px solid;
-        border-top: 4px solid;
+        border: 1px solid $border;
+        border-top: 4px solid $border;
+        &:hover {
+            border-color: $orange;
+        }
         padding: 0 20px;
         img {
-            width: 70px;
+            width: 60px;
+            padding-top: 10px;
         }
         a {
             text-decoration: none;
             text-transform: uppercase;
             padding: 10px 20px;
+            border: none;
             background-color: $green;
             color: white;
+            &:hover {
+                background-color: $dark_green;
+            }
         }
     }
 }
 
 .fp-journal-entries {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
     .journal-entry {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid;
-        height: 30vw;
-        width: 25vw;
-        margin-left: 1.5rem;
-
+        width: 100%;
+        border: 1px solid $border;
+        height: 420px;
         .fp-post-thumbnail {
-            height: 250px;
+            max-height: 240px;
+            overflow: hidden;
+            border-bottom: 4px solid $border;
         }
-        
-        .fp-post-comment {
-            color: $medium_grey;
-            font-size: 12px;
-            margin-top: 20px;
+        .fp-post-info {
             margin-left: 10px;
-        }
-
-        .fp-post-title {
-            
-            margin-left: 10px;
-
-            a {
-                text-decoration: none;
+            .fp-post-comment {
+                font-size: 0.8rem;
+                margin-top: 20px;
             }
-    
-            h3 {
-                margin-right: 50px;
-                font-size: 20px;
-                letter-spacing: 1px;
-            }
-
-            .read-more-btn {
-                border: 1px solid;
-                padding: 5px 15px 5px 15px;
+            .fp-post-title {
+                a {
+                    text-decoration: none;
+                }
+                h3 {
+                    margin-right: 50px;
+                    letter-spacing: 1px;
+                    color: $green;
+                    font-size: 1.2rem;
+                    font-family: "Novecento Sans Web";
+                    font-weight: bold;
+                    &:hover {
+                        color: $purple;
+                    }
+                }
+                .read-more-btn {
+                    border: 1px solid black;
+                    padding: 10px 20px;
+                    color: black;
+                    text-transform: uppercase;
+                    font-family: "Novecento Sans Web";
+                    font-weight: normal;
+                    &:hover {
+                        border: none;
+                        background-color: $green;
+                        color: white;
+                    }
+                }
             }
         }
     }

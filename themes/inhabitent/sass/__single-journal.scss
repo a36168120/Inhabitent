@@ -20,8 +20,12 @@
             left: 0;
             top: 0;
             background-color: $green;
-            padding: 20px 20px;
+            padding: 10px 20px;
             color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            width: 75%;
         }
         div {
             position: absolute;
@@ -56,7 +60,22 @@
             }
         }
     }
-}   
+}
+
+.product-icon button {
+    padding: 15px 30px;
+    background-color: white;
+    border-color: black;
+    border-radius: unset;
+    box-shadow: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    &:hover {
+        border: none;
+        background-color: $green;
+        color: white;
+    }
+}
 
 .product-comment {
     padding-right: 50px;
@@ -71,6 +90,13 @@
         box-shadow: none;
         text-shadow: none;
         width: unset;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $dark_green;
+            box-shadow: none;
+            border-color: none;
+        }
     }
 }
 

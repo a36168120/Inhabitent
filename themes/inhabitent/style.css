@@ -614,7 +614,10 @@ a {
   padding-left: 20px;
   margin-top: 50px; }
   .widget-area h2 {
-    color: #2f1339; }
+    color: #2f1339;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px; }
   .widget-area .custom-html-widget a {
     text-decoration: none; }
     .widget-area .custom-html-widget a span {
@@ -623,6 +626,8 @@ a {
       font-weight: normal;
       color: #248A83;
       line-height: 1.5; }
+      .widget-area .custom-html-widget a span:hover {
+        color: #2f1339; }
   .widget-area .day-of-week {
     font-weight: bold; }
   .widget-area .widget_archive ul {
@@ -634,6 +639,8 @@ a {
       .widget-area .widget_archive ul li a {
         text-decoration: none;
         color: #248A83; }
+        .widget-area .widget_archive ul li a:hover {
+          color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Content
@@ -738,12 +745,10 @@ object {
 --------------------------------------------------------------*/
 body {
   font-family: "Merriweather Web";
-  font-weight: normal;
-  font-size: 16px; }
+  font-weight: normal; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Novecento Sans Web";
-  font-weight: bold; }
+  font-family: "Novecento Sans Web"; }
 
 /* Front page */
 .hero-banner {
@@ -754,79 +759,82 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh; }
 
 .fp-journal h2 {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 20px 0;
+  letter-spacing: 1px; }
 
 .product-terms {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1.5rem; }
   .product-terms .product-term {
     text-align: center;
-    width: 20vw;
-    border: 1px solid;
-    border-top: 4px solid;
+    border: 1px solid #e1e1e1;
+    border-top: 4px solid #e1e1e1;
     padding: 0 20px; }
+    .product-terms .product-term:hover {
+      border-color: #d99054; }
     .product-terms .product-term img {
-      width: 70px; }
+      width: 60px;
+      padding-top: 10px; }
     .product-terms .product-term a {
       text-decoration: none;
       text-transform: uppercase;
       padding: 10px 20px;
+      border: none;
       background-color: #248A83;
       color: white; }
+      .product-terms .product-term a:hover {
+        background-color: #19625D; }
 
 .fp-journal-entries {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem; }
   .fp-journal-entries .journal-entry {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border: 1px solid;
-    height: 30vw;
-    width: 25vw;
-    margin-left: 1.5rem; }
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    height: 420px; }
     .fp-journal-entries .journal-entry .fp-post-thumbnail {
-      height: 250px; }
-    .fp-journal-entries .journal-entry .fp-post-comment {
-      color: #808080;
-      font-size: 12px;
-      margin-top: 20px;
+      max-height: 240px;
+      overflow: hidden;
+      border-bottom: 4px solid #e1e1e1; }
+    .fp-journal-entries .journal-entry .fp-post-info {
       margin-left: 10px; }
-    .fp-journal-entries .journal-entry .fp-post-title {
-      margin-left: 10px; }
-      .fp-journal-entries .journal-entry .fp-post-title a {
+      .fp-journal-entries .journal-entry .fp-post-info .fp-post-comment {
+        font-size: 0.8rem;
+        margin-top: 20px; }
+      .fp-journal-entries .journal-entry .fp-post-info .fp-post-title a {
         text-decoration: none; }
-      .fp-journal-entries .journal-entry .fp-post-title h3 {
+      .fp-journal-entries .journal-entry .fp-post-info .fp-post-title h3 {
         margin-right: 50px;
-        font-size: 20px;
-        letter-spacing: 1px; }
-      .fp-journal-entries .journal-entry .fp-post-title .read-more-btn {
-        border: 1px solid;
-        padding: 5px 15px 5px 15px; }
+        letter-spacing: 1px;
+        color: #248A83;
+        font-size: 1.2rem;
+        font-family: "Novecento Sans Web";
+        font-weight: bold; }
+        .fp-journal-entries .journal-entry .fp-post-info .fp-post-title h3:hover {
+          color: #2f1339; }
+      .fp-journal-entries .journal-entry .fp-post-info .fp-post-title .read-more-btn {
+        border: 1px solid black;
+        padding: 10px 20px;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Novecento Sans Web";
+        font-weight: normal; }
+        .fp-journal-entries .journal-entry .fp-post-info .fp-post-title .read-more-btn:hover {
+          border: none;
+          background-color: #248A83;
+          color: white; }
 
 /* Header */
 .site-header {
@@ -900,6 +908,8 @@ h1, h2, h3, h4, h5, h6 {
           color: #d99054; }
         .site-footer .footer-info .footer-flex-container .contact-info i {
           padding-right: 5px; }
+          .site-footer .footer-info .footer-flex-container .contact-info i span {
+            font-weight: normal; }
       .site-footer .footer-info .footer-flex-container .business-hours {
         width: 30%;
         padding-right: 50px; }
@@ -931,7 +941,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex; }
   .journal-content .site-main {
-    padding-top: 50px; }
+    padding-top: 100px; }
   .journal-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%;
@@ -951,7 +961,12 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       top: 0;
       background-color: #248A83;
-      padding: 20px 20px; }
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      width: 75%; }
       .journal-post .entry-header h2 a {
         text-decoration: none;
         color: white; }
@@ -976,7 +991,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto; }
 
 .shop-page-header {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web";
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px; }
   .shop-page-header .shop-terms {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1043,7 +1063,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-header {
   font-size: 2rem;
-  color: #2f1339; }
+  color: #2f1339;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .about-title .entry-header {
   display: none; }
@@ -1051,7 +1073,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-title .entry-content {
   margin: unset; }
   .about-title .entry-content h1 {
-    font-size: 3rem;
+    font-size: 3em;
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px; }
@@ -1065,20 +1087,28 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex; }
   .find-us-content .site-main {
-    padding-top: 50px; }
+    padding-top: 100px; }
   .find-us-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%;
     margin-top: 40px;
     padding-left: 41px; }
+  .find-us-content .site-main {
+    padding-top: 50px; }
+    .find-us-content .site-main h1 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.5rem; }
   .find-us-content .content-area {
     width: 70%;
     padding-right: 50px; }
   .find-us-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%; }
-  .find-us-content h2, .find-us-content h3 {
-    color: #2f1339; }
+
+.find-us-titles {
+  color: #2f1339;
+  font-size: 2rem; }
 
 .widget-area {
   padding-left: 40px; }
@@ -1101,6 +1131,8 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none; }
+    .find-us-form .find-us-submit input:hover {
+      background-color: #19625D; }
   .find-us-form p {
     color: #2f1339; }
 
@@ -1153,7 +1185,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex; }
   .single-product-content .site-main {
-    padding-top: 50px; }
+    padding-top: 100px; }
   .single-product-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%;
@@ -1169,17 +1201,26 @@ h1, h2, h3, h4, h5, h6 {
       .single-product-content .single-product .single-product-info .product-header {
         color: #d99054; }
         .single-product-content .single-product .single-product-info .product-header h1 {
-          margin: 0 auto; }
+          margin: 0 auto;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
       .single-product-content .single-product .single-product-info .product-price {
         font-family: "Novecento Sans Web";
         font-weight: normal;
         font-size: 2rem; }
       .single-product-content .single-product .single-product-info .product-icon button {
         padding: 15px 30px;
-        background-color: transparent;
+        background-color: white;
         border-color: black;
         border-radius: unset;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
         text-transform: uppercase; }
+        .single-product-content .single-product .single-product-info .product-icon button:hover {
+          border: none;
+          background-color: #248A83;
+          color: white; }
 
 /* Single Journal page */
 .single-journal-content {
@@ -1190,7 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex; }
   .single-journal-content .site-main {
-    padding-top: 50px; }
+    padding-top: 100px; }
   .single-journal-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%;
@@ -1210,8 +1251,12 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       top: 0;
       background-color: #248A83;
-      padding: 20px 20px;
-      color: white; }
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      width: 75%; }
     .single-journal-post .entry-header div {
       position: absolute;
       right: 0%;
@@ -1238,6 +1283,20 @@ h1, h2, h3, h4, h5, h6 {
         .single-journal-post .entry-footer span a:hover {
           color: #2f1339; }
 
+.product-icon button {
+  padding: 15px 30px;
+  background-color: white;
+  border-color: black;
+  border-radius: unset;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  text-transform: uppercase; }
+  .product-icon button:hover {
+    border: none;
+    background-color: #248A83;
+    color: white; }
+
 .product-comment {
   padding-right: 50px;
   padding-top: 50px; }
@@ -1250,7 +1309,14 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none;
-    width: unset; }
+    width: unset;
+    padding: 10px 20px;
+    text-transform: uppercase; }
+    .product-comment .submit:hover {
+      background-color: #19625D;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-color: none; }
 
 /* Log out comment */
 .comment-form {
@@ -1289,7 +1355,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex; }
   .archive-content .site-main {
-    padding-top: 50px; }
+    padding-top: 100px; }
   .archive-content .page-sidebar {
     border-left: 1px solid #e1e1e1;
     width: 30%;

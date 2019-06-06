@@ -3,6 +3,14 @@
 .find-us-content {
     @include container;
     @include main-content;
+    .site-main {
+        padding-top: 50px;
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 2.5rem;
+        }
+    }
     .content-area {
         width: 70%;
         padding-right: 50px;
@@ -11,9 +19,11 @@
         border-left: 1px solid $border;
         width: 30%;
     }
-    h2, h3 {
-        color: $purple;
-    }
+}
+
+.find-us-titles {
+    color: $purple;
+    font-size: 2rem;
 }
 
 .widget-area {
@@ -38,6 +48,9 @@
         border-radius: unset;
         box-shadow: none;
         text-shadow: none;
+        &:hover {
+            background-color: $dark_green;
+        }
     }
     p {
         color: $purple;
