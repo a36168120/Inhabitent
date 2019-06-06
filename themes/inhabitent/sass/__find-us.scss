@@ -8,7 +8,7 @@
         padding-right: 50px;
     }
     .page-sidebar {
-        border-left: 1px solid $light_grey;;
+        border-left: 1px solid $border;
         width: 30%;
     }
     h2, h3 {
@@ -25,6 +25,11 @@
     .find-us-star {
         color: $orange;
     }
+    input {
+        border-radius: unset;
+        box-shadow: none;
+        text-shadow: none;
+    }
     .find-us-submit input {
         padding: 10px 20px;
         text-transform: uppercase;
@@ -40,5 +45,5 @@
 }
 
 .wpcf7-form-control {
-    background-color: #F4F4F4;
+    background-color: $comment;
 }

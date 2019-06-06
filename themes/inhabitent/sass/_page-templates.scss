@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
             text-transform: uppercase;
             padding: 10px 20px;
-            background-color: #248A83;
+            background-color: $green;
             color: white;
         }
     }
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
         }
         
         .fp-post-comment {
-            color: #808080;
+            color: $medium_grey;
             font-size: 12px;
             margin-top: 20px;
             margin-left: 10px;

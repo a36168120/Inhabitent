@@ -6,29 +6,28 @@
  */
 
 get_header(); ?>
-
+<div class="archive-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="archive-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="archive-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<div class="archive-post">
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+					<?php get_template_part( 'template-parts/content' );?>
 
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+				<?php endwhile; ?>
+			</div>
 
 		<?php else : ?>
 
@@ -39,5 +38,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<div class="page-sidebar">
+		<?php get_sidebar(); ?>
+	</div>
+	
+</div>
 <?php get_footer(); ?>

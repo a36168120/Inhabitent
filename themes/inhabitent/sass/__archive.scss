@@ -1,6 +1,6 @@
-/* Journal page */ 
+/* Archice page */ 
 
-.journal-content {
+.archive-content {
     @include container;
     @include main-content;
     .content-area {
@@ -8,8 +8,14 @@
     }
 }
 
-.journal-post {
+.archive-header {
+    font-size: 1.3rem;
+    border-bottom: 1px solid $border;
+    margin-right: 50px;
+}
+.archive-post {
     padding-right: 50px;
+    padding-top: 50px;
     .entry-header {
         position: relative;
         img {
