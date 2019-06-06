@@ -866,7 +866,9 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: none;
       text-transform: uppercase;
       line-height: 1.75;
-      color: #248A83; }
+      color: #248A83;
+      font-family: "Novecento Sans Web";
+      font-weight: normal; }
 
 /* Footer */
 .site-footer {
@@ -890,7 +892,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 25%; }
         .site-footer .footer-info .footer-flex-container .contact-info a {
           text-decoration: none;
-          color: white; }
+          color: white;
+          font-size: 1.2rem; }
+          .site-footer .footer-info .footer-flex-container .contact-info a:hover {
+            text-decoration: underline; }
         .site-footer .footer-info .footer-flex-container .contact-info h3 {
           color: #d99054; }
         .site-footer .footer-info .footer-flex-container .contact-info i {
@@ -1326,3 +1331,10 @@ h1, h2, h3, h4, h5, h6 {
       color: white;
       font-family: "Novecento Sans Web";
       font-weight: normal; }
+
+/* Search bar */
+.search-submit i {
+  color: #248A83; }
+
+.search-bar input {
+  width: 170px; }
