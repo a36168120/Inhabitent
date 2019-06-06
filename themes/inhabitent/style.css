@@ -999,15 +999,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 1.5rem;
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
+  grid-gap: 1.5rem; }
   .shop-products-grid .products-grid-item {
     border: 1px solid #a1a1a1; }
     .shop-products-grid .products-grid-item article {
-      margin: 0; }
+      margin: 0;
+      height: 100%; }
     .shop-products-grid .products-grid-item .product-thumbnail {
       max-height: 150px;
       overflow: hidden; }
@@ -1018,7 +1015,8 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 20px 20px 0px 20px; }
+      padding: 20px 20px 0px 20px;
+      border-top: 5px solid #a1a1a1; }
       .shop-products-grid .products-grid-item .product-info .dots {
         overflow: hidden; }
 
@@ -1057,7 +1055,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 20px;
     text-transform: uppercase;
     background-color: #248A83;
-    color: white; }
+    color: white;
+    border-radius: unset;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
   .find-us-form p {
     color: #2f1339; }
 
@@ -1077,13 +1079,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .category-product-grid {
   padding-top: 25px;
+  padding-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 1.5rem;
-  padding-bottom: 50px; }
+  grid-gap: 1.5rem; }
   .category-product-grid .category-product-grid-item {
     border: 1px solid #a1a1a1; }
+    .category-product-grid .category-product-grid-item article {
+      margin: 0;
+      height: 100%; }
+    .category-product-grid .category-product-grid-item .category-product-thumbnail {
+      max-height: 150px;
+      overflow: hidden; }
+    .category-product-grid .category-product-grid-item .category-product-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 20px 0px 20px;
+      border-top: 5px solid #a1a1a1; }
+      .category-product-grid .category-product-grid-item .category-product-info .dots {
+        overflow: hidden; }
 
 /* Single Product page */
 .single-product-content {
@@ -1101,7 +1119,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
     padding-left: 41px; }
   .single-product-content .single-product {
-    height: 70vh;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; }
@@ -1117,7 +1135,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem; }
       .single-product-content .single-product .single-product-info .product-icon button {
         padding: 15px 30px;
-        background-color: white;
+        background-color: transparent;
         border-color: black;
         border-radius: unset;
         text-transform: uppercase; }
@@ -1180,6 +1198,43 @@ h1, h2, h3, h4, h5, h6 {
           color: #2f1339; }
 
 .product-comment {
+  padding-right: 50px;
   padding-top: 50px; }
   .product-comment h3 {
     font-size: 2rem; }
+  .product-comment .submit {
+    background-color: #248A83;
+    color: white;
+    border-radius: unset;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    width: unset; }
+
+/* Log out comment */
+.comment-form {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web";
+  color: #2f1339;
+  padding-bottom: 50px; }
+  .comment-form .comment-form-author {
+    display: inline-block;
+    width: 48%; }
+  .comment-form .comment-form-email {
+    display: inline-block;
+    width: 48%;
+    margin-left: 2%; }
+  .comment-form .comment-form-cookies-consent {
+    display: none; }
+  .comment-form p input {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: unset; }
+  .comment-form p label span {
+    color: #d99054; }
+  .comment-form p textarea {
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border-radius: unset; }

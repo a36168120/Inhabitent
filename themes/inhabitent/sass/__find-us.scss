@@ -30,6 +30,9 @@
         text-transform: uppercase;
         background-color: $green;
         color: white;
+        border-radius: unset;
+        box-shadow: none;
+        text-shadow: none;
     }
     p {
         color: $purple;

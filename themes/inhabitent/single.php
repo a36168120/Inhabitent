@@ -16,9 +16,9 @@ get_header(); ?>
 			</div>
 
 			<div class="product-icon">
-                <button><i class="fab fa-facebook-f"></i> Like</button>
-				<button><i class="fab fa-twitter"></i> Tweet</button>
-				<button><i class="fab fa-pinterest"> Pin</i></button>
+                <button type="button"><i class="fab fa-facebook-f"></i> Like</button>
+				<button type="button"><i class="fab fa-twitter"></i> Tweet</button>
+				<button type="button"><i class="fab fa-pinterest"> Pin</i></button>
             </div>
 
 			<div class="product-comment">

@@ -5,7 +5,7 @@
     @include container; 
     @include main-content;
     .single-product {
-        height: 70vh;
+        height: 500px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -24,15 +24,10 @@
             }
             .product-icon button{
                 padding: 15px 30px;
-                background-color: white;
+                background-color: transparent;
                 border-color: black;
                 border-radius: unset;
                 text-transform: uppercase;
-                // transition-duration: 0.4s;
-                // button :hover{
-                //     background-color: $green;
-                //     color: white;
-                // }
             }
         }
     }

@@ -12,15 +12,28 @@
 
 .category-product-grid {
     padding-top: 25px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-gap: 1.5rem;
-    padding-bottom: 50px;
     .category-product-grid-item {
         border: 1px solid $light_grey;
+        article {
+            margin: 0;
+            height: 100%;
+        }
         .category-product-thumbnail {
-            
+            max-height: 150px;
+            overflow: hidden;
+        }
+        .category-product-info {
+            display: flex;
+            justify-content: center;
+            padding: 20px 20px 0px 20px;
+            border-top: 5px solid $light_grey;
+            .dots {
+                overflow: hidden;
+            }
         }
     }
 }

@@ -59,8 +59,57 @@
 }   
 
 .product-comment {
+    padding-right: 50px;
     padding-top: 50px;
     h3 {
         font-size: 2rem;
+    }
+    .submit {
+        background-color: $green;
+        color: white;
+        border-radius: unset;
+        box-shadow: none;
+        text-shadow: none;
+        width: unset;
+    }
+}
+
+/* Log out comment */
+.comment-form {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web";
+    color: $purple;
+    padding-bottom: 50px;
+    .comment-form-author {
+        display: inline-block;
+        width: 48%;
+    }
+    .comment-form-email {
+        display: inline-block;
+        width: 48%;
+        margin-left: 2%;
+    }
+    .comment-form-cookies-consent {
+        display: none;
+    }
+    p {
+        input {
+            width: 100%;
+            margin-top: 10px;
+            background-color: $comment;
+            border-radius: unset;
+
+        }
+        label {
+            span {
+                color: $orange;
+            }
+        }
+        textarea {
+            margin-top: 10px;
+            background-color: $comment;
+            border-radius: unset;
+        }
     }
 }

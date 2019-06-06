@@ -27,14 +27,15 @@ get_header(); ?>
 							<header class="category-product-thumbnail">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail( 'large' ); ?>
+										<?php the_post_thumbnail( 'large' ); ?>
+									</a>
 								<?php endif; ?>
 							</header>
 
 							<div class="category-product-info"> 
-								<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-								<?php if ( 'post' === get_post_type() ) : ?>
-								<?php endif; ?>
+								<?php the_title( sprintf( '<span class="product-title">', esc_url( get_permalink() ) ), '</span>' ); ?>
+								<span class="dots">...............</span>
+								<div class="price"> <?php echo CFS()->get('price'); ?></div>
 							</div>
 						</article><!-- #post-## -->
 					</div><!-- End of grid-item -->
